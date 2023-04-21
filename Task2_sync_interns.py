@@ -17,8 +17,8 @@ def send_email():
     try:
         s=smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
-        s.login("wendmnewsaleamlak@gmail.com" , 'kzpahxbyhopgedbl')
-        s.sendmail("wendmnewsaleamlak@gmail.com",email_id,otp)
+        s.login("Email_Address" , 'password')
+        s.sendmail("Email_Address@gmail.com",email_id,otp)
     except:
         messagebox.showerror("error", "no internet connection")
         print()
